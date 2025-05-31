@@ -1,0 +1,16 @@
+@import './base.css';
+@import 'tailwindcss';
+@import 'remixicon/fonts/remixicon.css';
+
+@plugin "tailwindcss-motion";
+
+#app {
+  display: flex;
+  justify-content: center;
+  width: screen;
+  scrollbar-gutter: auto;
+}
+
+/* * {
+  outline: 1px solid #f00 !important;
+} */
