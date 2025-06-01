@@ -64,7 +64,7 @@ export const projects: Project[] = [
     links: [
       {
         icon: 'ri-github-line',
-        target: '',
+        target: 'https://github.com/SBMous/personal-site',
       },
     ],
     content:
