@@ -15,7 +15,12 @@ export const projects: Project[] = [
     links: [
       {
         icon: 'ri-github-line',
-        target: '',
+        target: 'https://github.com/SBMous/votechain-report-source/',
+      },
+      {
+        icon: 'ri-file-text-line',
+        target:
+          'https://raw.githubusercontent.com/SBMous/votechain-report-source/main/FinalReport-Pnyx.pdf',
       },
     ],
     content:
@@ -36,8 +41,9 @@ export const projects: Project[] = [
     ],
     links: [
       {
-        icon: 'ri-github-line',
-        target: '',
+        icon: 'ri-global-line',
+        target:
+          'https://polydactyl-stem-d2c.notion.site/Objective-Function-394bf5f0be41421dbebddc1b69c8e469',
       },
     ],
     content:

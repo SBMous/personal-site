@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
@@ -21,11 +22,19 @@ const links: Link[] = [
     target: "/projects",
     text: "projects"
   },
-  {
-    target: "/blog",
-    text: "blog"
-  }
+  // {
+  //   target: "/blog",
+  //   text: "blog"
+  // }
 ]
+
+const path = computed(() => {
+  if (router.currentRoute.value.name != "blogpost") {
+    return { prefix: '', item: router.currentRoute.value.name }
+  }
+
+  return { prefix: 'blog/', item: router.currentRoute.value.path.split('/').slice(-1)[0] }
+})
 </script>
 
 <template>
@@ -33,8 +42,8 @@ const links: Link[] = [
     <nav
       class="flex justify-between max-w-2xl w-full mx-4 bg-widget/70 px-4 sm:px-8 py-2 border-1 border-brand-gold font-text items-center">
       <h2>
-        <span class="text-faded font-text">george/</span><span class="text-brand-gold font-text">{{
-          router.currentRoute.value.name }}</span>
+        <span class="text-faded font-text">george/{{ path.prefix }}</span><span class="text-brand-gold font-text">{{
+          path.item }}</span>
       </h2>
       <ul class="flex gap-4 sm:gap-8 text-faded font-text max-w-1/2 sm:max-w-full flex-wrap justify-end">
         <li v-for="link in links">

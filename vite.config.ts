@@ -6,6 +6,8 @@ import svgLoader from 'vite-svg-loader'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 import mdx from '@mdx-js/rollup'
+import remarkFrontmatter from 'remark-frontmatter'
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,7 +16,11 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss(),
     svgLoader(),
-    mdx({ jsxImportSource: 'vue', providerImportSource: '@mdx-js/vue' }),
+    mdx({
+      jsxImportSource: 'vue',
+      providerImportSource: '@mdx-js/vue',
+      remarkPlugins: [[remarkFrontmatter, ['yaml']], remarkMdxFrontmatter],
+    }),
   ],
   resolve: {
     alias: {

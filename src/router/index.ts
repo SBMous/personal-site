@@ -34,13 +34,18 @@ const router = createRouter({
     },
     {
       path: '/blog',
-      name: 'blog',
-      component: () => import('@/views/BlogHomeView.vue'),
-    },
-    {
-      path: '/blog/:slug',
-      name: 'blogslug',
-      component: () => import('@/views/BlogPostView.vue'),
+      children: [
+        {
+          path: ':slug',
+          name: 'blogpost',
+          component: () => import('@/views/BlogPostView.vue'),
+        },
+        {
+          path: '',
+          name: 'blog',
+          component: () => import('@/views/BlogHomeView.vue'),
+        },
+      ],
     },
     {
       path: '/oops',
