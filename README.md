@@ -1,6 +1,8 @@
-# site
+# personal-site
 
-This template should help get you started developing with Vue 3 in Vite.
+Iteration 4 v0 of my personal site. This is developed as a vue SPA for ease of markup and deployed as a bundled static site to `george.yarnley.com`.
+
+Coming soon - mdx blog posts (Once I work out rendering and bundling those at build time)
 
 ## Recommended IDE Setup
 
