@@ -1,0 +1,18 @@
+---
+title: Making a Portfolio
+description: The making of this very site!
+publishedAt: 2025-06-01T14:25:46+00:00
+---
+
+### Inspirations
+
+- [Zed](https://zed.dev/)
+- [Ted Awf](https://tedawf.com/)
+- [Ottomated](https://ottomated.net)
+- [vin.gg](https://vin.gg)
+- [xnacly](https://xnacly.me/)
+- [Cobalt](https://cobalt.tools/)
+- [GoblinOats](https://goblinoats.com)
+- [HarryKingdon](https://www.harrykingdon.com/)
+- [nicholaschen.io](https://nicholaschen.io/)
+- [Joe Carlsmith](https://joecarlsmith.com/)

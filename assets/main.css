@@ -1,0 +1,153 @@
+@import 'tailwindcss';
+/* @plugin "tailwindcss-motion"; */
+
+/* Default Vue Custom Colours */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables */
+:root {
+  --color-background: var(--vt-c-bg-yellow);
+  --color-background-soft: var(--vt-c-bg-yellow-callout);
+  --color-background-mute: var(--vt-c-black-mute);
+
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
+
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);
+
+  --section-gap: 160px;
+}
+
+/* My Custom Theming */
+:root {
+  --c-background: #000000;
+  --c-widget: #0d0a02;
+  --c-widget-hover: #2a2107;
+
+  --c-button-hover: #342808;
+
+  --c-brand-gold: #f6cb20;
+
+  --c-text-lightgrey: #eae9e0;
+  --c-text-faded: #5e5e5e;
+}
+
+/* @font-face {
+  font-family: Nexa;
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/NexaTextDemo-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Nexa;
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("/fonts/NexaTextDemo-Bold.woff2") format("woff2");
+} */
+
+@theme {
+  --font-display: 'Nexa', Inter, sans-serif;
+  /* --font-mono: 'Fira Code' Inter sans-serif; */
+  --font-text: 'Fira Code', Inter, sans-serif;
+
+  --color-background: var(--c-background);
+  --color-widget: var(--c-widget);
+  --color-widget-hover: var(--c-widget-hover);
+
+  --color-button-hover: var(--c-button-hover);
+
+  --color-brand-gold: var(--c-brand-gold);
+
+  --color-body: var(--c-text-lightgrey);
+  --color-faded: var(--c-text-faded);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+  }
+
+  body {
+    min-height: 100vh;
+    color: var(--c-text-lightgrey);
+    background: var(--c-background);
+    transition:
+      color 0.5s,
+      background-color 0.5s;
+    line-height: 1.6;
+    font-family:
+      'Fira Code',
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      sans-serif;
+    overflow-x: hidden;
+    scrollbar-gutter: static both-edges;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  .page-enter-active,
+  .page-leave-active {
+    transition: all 0.4s;
+  }
+  .page-enter-from,
+  .page-leave-to {
+    opacity: 0;
+    filter: blur(1rem);
+  }
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  width: screen;
+  scrollbar-gutter: auto;
+}
+
+/* Debug Layout */
+/* * {
+  outline: 1px solid #f00 !important;
+} */

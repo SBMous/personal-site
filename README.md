@@ -1,41 +1,45 @@
-# personal-site
+# Personal Site
 
-Iteration 4 v0 of my personal site. This is developed as a vue SPA for ease of markup and deployed as a bundled static site to `george.yarnley.com`.
+## Features
 
-Coming soon - mdx blog posts (Once I work out rendering and bundling those at build time)
+## Deployment
 
-## Recommended IDE Setup
+Deployed on my homelab k3s server using [static-web-server](https://static-web-server.net/) as a static site. Public routing via reverse proxy on a light public-cloud node.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Built With
 
-## Type Support for `.vue` Imports in TS
+- [Nuxt](https://nuxt.com/)
+  - [Nuxt Content](https://content.nuxt.com/)
+  - [Nuxt Fonts](https://fonts.nuxt.com/)
+  - [Nuxt svgo](https://nuxt.com/modules/nuxt-svgo)
+  - [Nuxt Icons](https://nuxt.com/modules/icon) with [Iconify Remix Icons](https://icon-sets.iconify.design/ri/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Luxon](https://moment.github.io/luxon/#/)
+- [Bun](https://bun.sh)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Setup
 
-## Customize configuration
+Install dependencies using bun:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+# bun
 bun install
 ```
 
-### Compile and Hot-Reload for Development
+## Development Server
 
-```sh
-bun dev
+Start the development server on `http://localhost:3000`:
+
+```bash
+# bun
+bun run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## Production
 
-```sh
-bun run build
-```
+Build the application for production:
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-bun lint
+```bash
+# bun
+bun run generate
 ```
