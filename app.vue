@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Menu from '~/components/MenuBar.vue'
+import Menu from '~/components/menu/Menu.vue'
 
 const router = useRouter()
 

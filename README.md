@@ -13,6 +13,7 @@ Deployed on my homelab k3s server using [static-web-server](https://static-web-s
   - [Nuxt Fonts](https://fonts.nuxt.com/)
   - [Nuxt svgo](https://nuxt.com/modules/nuxt-svgo)
   - [Nuxt Icons](https://nuxt.com/modules/icon) with [Iconify Remix Icons](https://icon-sets.iconify.design/ri/)
+  - [Nuxt Device](https://nuxt.com/modules/device)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Luxon](https://moment.github.io/luxon/#/)
 - [Bun](https://bun.sh)
