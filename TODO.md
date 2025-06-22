@@ -1,5 +1,23 @@
 # Outstanding
 
 - [ ] Use https://placehold.co/ for placeholder images while loading
-- [ ] Update deployment to nuxt version & to point to correct 404 page
-- [ ] Use ProseComponents to style Blog Posts
+- [x] Update deployment to nuxt version & to point to correct 404 page
+- [ ] Use ProseComponents to better style Blog Posts
+- [ ] Fix padding on Blog Navigation
+- [ ] Fix mobile menu button
+  - [ ] Better Positioning (Partially off-screen when inactive. Fully Centred and actually pinned to the bottom of the menu when active)
+  - [ ] Stay under intro animation
+  - [ ] Smaller
+  - [ ] Actually Square
+  - [ ] More Indication it's a button
+- [ ] Replace mobile menu header with the one from the design
+- [ ] Implement offset border effect for top menu
+- [ ] Potentially reconsider menu elements layout so that there is not a weird gap on mobile (Can I make the top bar take space but keep the grid consistent?)
+- [ ] Project Page Improvements
+  - [ ] Add more tags
+  - [ ] Add Project Images
+- [ ] Timeline Improvements
+  - [ ] Timeline Elements need to be more interactive (Can I make them render markdown?)
+  - [ ] Images / Icons would be great
+  - [ ] Dates? Locations? Metadata, metadata, metadata.
+  - [ ] Long term doing the tapestry layered-time idea for this would be super cool

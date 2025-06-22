@@ -1,10 +1,10 @@
 ---
 title: Making a Portfolio
 description: The making of this very site!
-publishedAt: 2025-06-01T14:25:46+00:00
+publishedAt: 2025-06-01
 ---
 
-![A picture of this site's Homepage](/blog-images/personal-site-v4_1-homepage.png)
+![A picture of this site's Homepage](/blog/site-making/personal-site-v4_1-homepage.png)
 
 ## Why a personal site?
 
@@ -20,7 +20,7 @@ The first question is why I would build and maintain a personal site? A personal
 
 Conceptually, this site has been in the works for a long time. The first crack at the design I took came in 2020 as I geared up for applying to apprenticeship positions and figured that a personal site would be a great way to stand out.
 
-![Original Site Design Image](/blog-images/personal-site-original-design.png)
+![Original Site Design Image](/blog/site-making/personal-site-original-design.png)
 
 It was at this time that original ideas for the iconography and typography arose, the general colour theme as well as some of the key structural ideas. However, before I managed to build this version I recieved an offer for the apprenticeship from Goldman Sachs and moved on to preparing myself for that role, so this version never saw a real deployment.
 
@@ -28,7 +28,7 @@ Fast forward to the start of 2025. I have completed my apprenticeship and want t
 
 ### Version 3
 
-![Version 3 of my personal site](/blog-images/personal-site-v3-homepage.png)
+![Version 3 of my personal site](/blog/site-making/personal-site-v3-homepage.png)
 Version 3 is where I begin to hone in on the 'true' intention of the site, stripping back the complexity and focusing on the essentials for a good MVP. I settle on a simple intro animation for initial visual flair, and a 4-part site structure. The focus here is on shipping _something_ with far less focus on ensuring that that thing is perfect.
 
 From here I built and shipped version 3 within a weekend. It was very simple, content light and not particularly robust (On mobile the site was basically unusable). However, having it in the wild allowed me to really see the flaws in it and hone in on them effectively for the next version.

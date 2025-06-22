@@ -7,5 +7,5 @@ const deviceType = useDevice()
 
 <template>
   <MenuModal v-if="deviceType.isMobile" />
-  <MenuBar v-else />
+  <MenuBar />
 </template>

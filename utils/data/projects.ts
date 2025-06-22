@@ -11,6 +11,12 @@ export const projects: Project[] = [
         content: 'WIP',
         icon: 'ri:hammer-line',
       },
+      {
+        content: 'Rust',
+      },
+      {
+        content: 'LibP2P',
+      },
     ],
     links: [
       {
@@ -30,7 +36,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Objective Function',
-    tags: [{ content: 'Systems Thinking' }, { content: 'WIP', icon: 'ri:hammer-line' }],
+    tags: [{ content: 'Systems Thinking' }, { content: 'Social Change' }],
     links: [
       {
         icon: 'ri:global-line',
@@ -45,7 +51,12 @@ export const projects: Project[] = [
   },
   {
     name: 'Personal Site',
-    tags: [{ content: 'UX Design' }, { content: 'This!' }, { content: 'Nuxt' }],
+    tags: [
+      { content: 'This!' },
+      { content: 'UX Design' },
+      { content: 'Nuxt' },
+      { content: 'Tailwind' },
+    ],
     links: [
       {
         icon: 'ri:github-line',

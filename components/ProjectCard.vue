@@ -8,14 +8,12 @@ const { project } = defineProps<{
 
 <template>
   <div class="bg-widget border-brand-gold mx-auto max-w-lg border-1 px-6 py-4">
-    <h2 class="font-display mb-2 text-xl font-bold">{{ project.name }}</h2>
-    <div class="flex w-full justify-between">
+    <h2 class="font-display mb-2 text-2xl font-bold">{{ project.name }}</h2>
+    <div class="flex w-full justify-between gap-6">
       <!-- Project Tags -->
-      <div class="mb-4 flex gap-2">
-        <span
-          v-for="tag in project.tags"
-          class="bg-brand-gold h-min rounded-lg px-4 py-1 text-xs font-bold text-black"
-        >
+      <div class="mb-4 flex gap-2 flex-wrap">
+        <span v-for="tag in project.tags"
+          class="bg-brand-gold h-min w-max rounded-sm px-2 py-1 text-xs font-bold text-black">
           <i v-if="tag.icon" :class="tag.icon"></i> {{ tag.content }}
         </span>
       </div>
@@ -26,7 +24,7 @@ const { project } = defineProps<{
         </a>
       </div>
     </div>
-    <p class="text-xs">
+    <p class="text-sm">
       {{ project.content }}
     </p>
   </div>

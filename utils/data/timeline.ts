@@ -32,18 +32,39 @@ export const events: TimelineEvent[] = [
     title: 'Rotate to Core Engineering @ Goldman Sachs',
     date: '2022-7-01',
     content:
-      'I switch into a role building developer tooling and controls software including working on the internal Gitlab instance, building distribution tools and controls products.',
+      'As part of the apprenticeship I rotate into a role within the core engineering division. ' +
+      'My responsibilities include building developer tooling and controls software including ' +
+      'working on the internal Gitlab instance and building code distribution tools.',
   },
   {
     title: 'Join Goldman Sachs as an Apprentice',
     date: '2020-9-18',
     content:
-      'I join Goldman Sachs as a Software Engineering Apprentice working with the Prime Services team to deliver risk management analytics and big data processing.',
+      'I joined Goldman Sachs as a Software Engineering Apprentice working with the Prime Services Analytics ' +
+      'team to deliver risk management analytics and big data processing. My role includes delivering UI and ' +
+      'UX features written in React and Typescript, and building data ingest and processing infrastructure ' +
+      'for new risk management datasets.',
+  },
+  {
+    title: 'Graduate Exeter Maths School',
+    date: '2020-6-01',
+    content:
+      'After two years I graduated with four A-Levels graded A*, A*, A, A as well as an AS Graded B.',
+    // TODO: When switching to component approach map grades to subjects?
   },
   {
     title: 'GCHQ Research Project',
     date: '2019-2-01',
     content:
-      'Participate in a research project at GCHQ looking into crash-dump memory analysis techniques for exposing private keys of vulnerable cryptosystems.',
+      'I participated in a research project in collaboration with GCHQ looking into crash-dump memory ' +
+      'analysis techniques for exposing private keys within vulnerable cryptosystems.',
+  },
+  {
+    title: 'Start Studies at Exeter Maths School',
+    date: '2018-9-01',
+    content:
+      'I was selected amongst a highly competitive application process to be a student at Exeter Maths ' +
+      'School, an alternative teaching-style college which filters for the most able mathematicians in ' +
+      'the south west of England.',
   },
 ]

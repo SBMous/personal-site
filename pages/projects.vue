@@ -6,8 +6,7 @@ import { projects } from '~/utils/data/projects'
 <template>
   <main>
     <div
-      class="flex w-screen justify-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0)_0%,rgba(0,0,0,0.0)_40%,rgba(0,0,0,1.0)_100%),url(/bg-tile.png)] bg-center pt-40 pb-6 sm:pb-12"
-    >
+      class="flex w-screen justify-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0)_0%,rgba(0,0,0,0.0)_40%,rgba(0,0,0,1.0)_100%),url(/bg-tile.png)] bg-center pt-40 pb-12 sm:pb-16">
       <h1 class="font-display w-max text-4xl font-bold sm:text-6xl">My Projects.</h1>
     </div>
     <section class="mx-auto grid w-4/5 max-w-2xl grid-cols-1 gap-6 pb-12 sm:grid-cols-2">
