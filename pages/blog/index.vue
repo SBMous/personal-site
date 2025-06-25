@@ -13,14 +13,14 @@ const { data: posts } = await useAsyncData('blog', () =>
       <h1 class="font-display text-4xl font-bold sm:text-6xl">My Thoughts</h1>
     </div>
     <section class="mx-auto grid max-w-2xl grid-cols-1 gap-4 px-8">
-      <NuxtLink v-for="post in posts" :to="post.path" class="bg-widget border-brand-gold w-full border-1 px-4 py-4">
+      <NuxtLink v-for="post in posts" :to="post.path" class="bg-widget border-brand-gold w-full border-1 px-4 py-8">
         <div class="flex justify-between flex-col md:flex-row md:gap-4 pb-2">
-          <h2 class="font-display text-xl/tight font-bold flex-wrap">{{ post.title }}</h2>
+          <h2 class="font-display text-xl/tight md:text-2xl/tight font-bold flex-wrap">{{ post.title }}</h2>
           <span class="text-faded text-sm w-max whitespace-nowrap">
             {{ getHumanDate(post.publishedAt) }}
           </span>
         </div>
-        <p>{{ post.description }}</p>
+        <p class="mb-0">{{ post.description }}</p>
       </NuxtLink>
     </section>
   </main>

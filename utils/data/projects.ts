@@ -50,6 +50,15 @@ export const projects: Project[] = [
       'of organisations and people alike.',
   },
   {
+    name: 'Home Server',
+    tags: [{ content: 'Infrastructure' }, { content: 'Kubernetes' }, { content: 'Kubernetes' }],
+    links: [],
+    content:
+      'My personal home server. Consists of a K3s cluster deployed on recycled hardware. ' +
+      'Public routing is handled by a cloud proxy node. This allows me to host side projects ' +
+      'and is also a great place to experiment with deployment techniques.',
+  },
+  {
     name: 'Personal Site',
     tags: [
       { content: 'This!' },
