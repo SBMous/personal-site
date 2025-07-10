@@ -25,3 +25,6 @@ logs
 
 DEPLOYMENT.md
 deploy.ps1
+
+# Don't persist unpublished blog posts
+/content/blog/unpublished/**/*
